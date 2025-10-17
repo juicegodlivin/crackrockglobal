@@ -1,0 +1,45 @@
+========================================
+ADMIN PANEL - QUICK SETUP GUIDE
+========================================
+
+STEP 1: Create .env.local file in project root
+-----------------------------------------------
+Create a file called: .env.local
+
+Paste this content:
+
+ADMIN_PASSWORD=crackrock2024
+SESSION_SECRET=crackrock-session-secret-change-this-in-production-8a7f6e5d4c3b2a1
+NODE_ENV=development
+
+
+STEP 2: Restart your dev server
+--------------------------------
+Stop the current server (Ctrl+C in terminal)
+Then run: npm run dev
+
+
+STEP 3: Test the login
+-----------------------
+1. Go to: http://localhost:3000/dashboard/admin
+2. Enter password: crackrock2024
+3. You should see the admin panel
+
+
+IMPORTANT FOR PRODUCTION:
+--------------------------
+1. Generate a secure session secret:
+   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+
+2. Use a strong password
+
+3. Set these in your hosting platform's environment variables
+   (Vercel, Netlify, Railway, etc.)
+
+4. NEVER commit .env.local to git (it's already in .gitignore)
+
+
+That's it! Your admin panel is now secure.
+
+See ADMIN_AUTH_SETUP.md for complete documentation.
+

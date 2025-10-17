@@ -1,0 +1,83 @@
+[
+  {
+    "id": "trending",
+    "name": "Trending",
+    "slug": "trending",
+    "description": "AI-analyzed token predictions with real-time betting markets",
+    "icon": "TrendingUp",
+    "group": "markets"
+  },
+  {
+    "id": "all",
+    "name": "All Markets",
+    "slug": "all",
+    "description": "Browse all active prediction markets",
+    "icon": "Grid3x3",
+    "group": "markets"
+  },
+  {
+    "id": "celebrities",
+    "name": "Celebrities",
+    "slug": "celebrities",
+    "description": "Celebrity gossip and entertainment predictions",
+    "icon": "Star",
+    "group": "markets"
+  },
+  {
+    "id": "crypto-markets",
+    "name": "Crypto Markets",
+    "slug": "crypto-markets",
+    "description": "Token price predictions and market movements",
+    "icon": "Bitcoin",
+    "group": "markets"
+  },
+  {
+    "id": "politics",
+    "name": "Politics",
+    "slug": "politics",
+    "description": "Political events and election outcomes",
+    "icon": "Landmark",
+    "group": "markets"
+  },
+  {
+    "id": "crackrock-accumulation",
+    "name": "CrackRock Accumulation",
+    "slug": "crackrock-accumulation",
+    "description": "Strategic CrackRock acquisition predictions",
+    "icon": "Gem",
+    "group": "markets"
+  },
+  {
+    "id": "kol-chaos",
+    "name": "KOL Chaos",
+    "slug": "kol-chaos",
+    "description": "Influencer behavior and drama predictions",
+    "icon": "Megaphone",
+    "group": "degen"
+  },
+  {
+    "id": "token-launches",
+    "name": "Token Launches",
+    "slug": "token-launches",
+    "description": "Will it moon or dump? New token predictions",
+    "icon": "Rocket",
+    "group": "degen"
+  },
+  {
+    "id": "rug-pulls",
+    "name": "Rug Pulls",
+    "slug": "rug-pulls",
+    "description": "Spot the next rug or find the next 100x",
+    "icon": "AlertTriangle",
+    "group": "degen"
+  },
+  {
+    "id": "fomo-bets",
+    "name": "FOMO Bets",
+    "slug": "fomo-bets",
+    "description": "High-risk trending plays for maximum degeneracy",
+    "icon": "Flame",
+    "group": "degen"
+  }
+]
+

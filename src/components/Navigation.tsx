@@ -21,14 +21,16 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3 }}
-              className="text-2xl font-display font-black text-black"
-            >
-              CrackRock
-            </motion.div>
+            <Link href="/">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-2xl font-display font-black text-black cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                CrackRock
+              </motion.div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

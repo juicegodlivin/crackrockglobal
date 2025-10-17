@@ -1,0 +1,854 @@
+[
+  {
+    "id": "swif-pump",
+    "ticker": "$JITO",
+    "name": "JITO",
+    "question": "Will $JITO pump +25% in the next 48 hours?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "jito-governance-token",
+    "badges": [
+      "TRENDING"
+    ],
+    "yesPercentage": 46,
+    "noPercentage": 54,
+    "yesPrice": "46¢",
+    "noPrice": "54¢",
+    "volume": "$355.7M",
+    "price": "$3.12",
+    "change24h": "-2.32%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "JITO is Solana's leading liquid staking protocol and MEV infrastructure provider. Strong fundamentals with consistent staking yields and growing validator network.",
+      "liquidity": "$45.2M",
+      "holders": "89,234",
+      "marketCap": "$387.5M",
+      "technicalAnalysis": "Trading near support levels after recent pullback. Volume profile suggests accumulation zone, with potential for bounce if broader market stabilizes.",
+      "catalysts": [
+        "Increased Solana staking demand",
+        "MEV infrastructure expansion",
+        "Protocol revenue growth",
+        "Validator network expansion"
+      ]
+    }
+  },
+  {
+    "id": "bonk-ath",
+    "ticker": "$BONK",
+    "name": "BONK",
+    "question": "Will $BONK reach new ATH this week?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "bonk",
+    "badges": [
+      "HOT"
+    ],
+    "yesPercentage": 58,
+    "noPercentage": 42,
+    "yesPrice": "58¢",
+    "noPrice": "42¢",
+    "volume": "$137.2M",
+    "price": "$1.08e-5",
+    "change24h": "-1.24%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "BONK, the Solana meme coin, has been consolidating near resistance. Community hype is building ahead of potential new ATH.",
+      "liquidity": "$24.8M",
+      "holders": "128,451",
+      "marketCap": "$452.1M",
+      "technicalAnalysis": "Trading at 87% of ATH, strong support at current levels",
+      "catalysts": [
+        "Solana ecosystem growth",
+        "New DEX integrations",
+        "Burn mechanism activation"
+      ]
+    }
+  },
+  {
+    "id": "meme-outperform",
+    "ticker": "$WIF",
+    "name": "dogwifhat",
+    "question": "Will $WIF outperform SOL by 15% this month?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "dogwifcoin",
+    "badges": [
+      "TRENDING"
+    ],
+    "yesPercentage": 51,
+    "noPercentage": 49,
+    "yesPrice": "51¢",
+    "noPrice": "49¢",
+    "volume": "$39.1M",
+    "price": "$0.003775",
+    "change24h": "-2.94%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Dogwifhat is a meme token of a dog with a hat, operating on the Solana blockchain.",
+      "liquidity": "$8.2M",
+      "holders": "34,219",
+      "marketCap": "$124.5M",
+      "technicalAnalysis": "Correlation to SOL breaking down, suggesting independent movement",
+      "catalysts": [
+        "Meme season narrative",
+        "Viral TikTok campaign",
+        "Major influencer backing"
+      ]
+    }
+  },
+  {
+    "id": "popcat-resistance",
+    "ticker": "$POPCAT",
+    "name": "POPCAT",
+    "question": "Will $POPCAT break key resistance in 24h?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "popcat",
+    "badges": [
+      "NEW"
+    ],
+    "yesPercentage": 58,
+    "noPercentage": 42,
+    "yesPrice": "58¢",
+    "noPrice": "42¢",
+    "volume": "$45.2M",
+    "price": "$0.1653",
+    "change24h": "-1.65%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "POPCAT testing critical resistance at $0.18. Multiple rejections at this level but buying pressure increasing.",
+      "liquidity": "$6.7M",
+      "holders": "28,934",
+      "marketCap": "$163.2M",
+      "technicalAnalysis": "Triple top formation, watching for breakout or rejection",
+      "catalysts": [
+        "Strong community momentum",
+        "Meme coin rotation",
+        "Binance listing speculation"
+      ]
+    }
+  },
+  {
+    "id": "pepe-30days",
+    "ticker": "$PEPE",
+    "name": "PEPE",
+    "question": "Will $PEPE 2x within the next 30 days?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "pepe",
+    "badges": [
+      "HOT"
+    ],
+    "yesPercentage": 73,
+    "noPercentage": 27,
+    "yesPrice": "73¢",
+    "noPrice": "27¢",
+    "volume": "$643.9M",
+    "price": "$7.44e-6",
+    "change24h": "-3.21%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "PEPE has shown explosive growth patterns historically. Current consolidation may be setting up for next leg up.",
+      "liquidity": "$89.2M",
+      "holders": "342,781",
+      "marketCap": "$3.1B",
+      "technicalAnalysis": "Forming ascending triangle, breakout target aligns with 2x projection",
+      "catalysts": [
+        "Meme supercycle thesis",
+        "Institutional interest growing",
+        "Major exchange listings pending"
+      ]
+    }
+  },
+  {
+    "id": "maintain-support",
+    "ticker": "$BOME",
+    "name": "BOOK OF MEME",
+    "question": "Will $BOME maintain above current support level?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "book-of-meme",
+    "badges": [
+      "LIVE"
+    ],
+    "yesPercentage": 66,
+    "noPercentage": 34,
+    "yesPrice": "66¢",
+    "noPrice": "34¢",
+    "volume": "$328.1M",
+    "price": "$0.2164",
+    "change24h": "-38.37%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "BOOK OF MEME experienced sharp correction but holding key support. Volume analysis suggests accumulation at current levels.",
+      "liquidity": "$15.3M",
+      "holders": "19,456",
+      "marketCap": "$216.4M",
+      "technicalAnalysis": "Oversold on all timeframes, RSI divergence forming",
+      "catalysts": [
+        "Panic selling exhaustion",
+        "Smart money accumulating",
+        "Meme narrative strong"
+      ]
+    }
+  },
+  {
+    "id": "doge-volume-spike",
+    "ticker": "$DOGE",
+    "name": "DOGECOIN",
+    "question": "Will $DOGE see +50% volume spike this week?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "dogecoin",
+    "badges": [
+      "TRENDING"
+    ],
+    "yesPercentage": 64,
+    "noPercentage": 36,
+    "yesPrice": "64¢",
+    "noPrice": "36¢",
+    "volume": "$6.3B",
+    "price": "$0.2822",
+    "change24h": "-2.92%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "DOGECOIN showing early signs of renewed interest. Elon Musk tweets correlation remains strong predictor of volume.",
+      "liquidity": "$324.5M",
+      "holders": "4,892,341",
+      "marketCap": "$41.2B",
+      "technicalAnalysis": "Volume declining but watching for reversal pattern",
+      "catalysts": [
+        "Potential Musk tweet",
+        "Payment integration news",
+        "Meme coin mania spreading"
+      ]
+    }
+  },
+  {
+    "id": "shib-pump",
+    "ticker": "$SHIB",
+    "name": "SHIBA INU",
+    "question": "Will $SHIB pump +25% in the next 48 hours?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "shiba-inu",
+    "badges": [
+      "TRENDING"
+    ],
+    "yesPercentage": 68,
+    "noPercentage": 32,
+    "yesPrice": "68¢",
+    "noPrice": "32¢",
+    "volume": "$254.4M",
+    "price": "$1.07e-5",
+    "change24h": "5.74%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "SHIB showing strength as dog coin sector rotates. Shibarium Layer 2 activity increasing significantly.",
+      "liquidity": "$45.8M",
+      "holders": "1,234,567",
+      "marketCap": "$6.3B",
+      "technicalAnalysis": "Breaking out of downtrend, momentum building",
+      "catalysts": [
+        "Shibarium adoption",
+        "Burn rate increase",
+        "Exchange listings",
+        "Community initiatives"
+      ]
+    }
+  },
+  {
+    "id": "sol-ath",
+    "ticker": "$SOL",
+    "name": "SOLANA",
+    "question": "Will $SOL reach new ATH next week?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "solana",
+    "badges": [
+      "SOLANA"
+    ],
+    "yesPercentage": 61,
+    "noPercentage": 39,
+    "yesPrice": "61¢",
+    "noPrice": "39¢",
+    "volume": "$12.9B",
+    "price": "$201.2B",
+    "change24h": "-2.12%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Solana approaching previous ATH with strong ecosystem growth. Network usage at record highs.",
+      "liquidity": "$892.1M",
+      "holders": "2,891,234",
+      "marketCap": "$89.4B",
+      "technicalAnalysis": "Testing resistance at $210, bullish flag formation",
+      "catalysts": [
+        "Ecosystem expansion",
+        "Firedancer upgrade",
+        "Institutional adoption",
+        "DeFi TVL growth"
+      ]
+    }
+  },
+  {
+    "id": "trump-sol-beat",
+    "ticker": "$JUP",
+    "name": "JUPITER",
+    "question": "Will $JUP outperform SOL by 15% this month?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "jupiter-exchange-solana",
+    "badges": [
+      "NEW"
+    ],
+    "yesPercentage": 65,
+    "noPercentage": 35,
+    "yesPrice": "65¢",
+    "noPrice": "35¢",
+    "volume": "$416.7M",
+    "price": "$1.08",
+    "change24h": "-1.73%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Jupiter is the leading DEX aggregator on Solana, providing best price execution across all Solana DEXs. High trading volume and strong product-market fit with upcoming perpetuals platform launch.",
+      "liquidity": "$89.3M",
+      "holders": "453,892",
+      "marketCap": "$1.4B",
+      "technicalAnalysis": "Consolidating after strong rally. Volume profile shows sustained interest with healthy price action relative to Solana ecosystem.",
+      "catalysts": [
+        "Jupiter Perpetuals v2 launch",
+        "JUP token utility expansion",
+        "Solana ecosystem growth driving DEX volume",
+        "Upcoming governance proposals"
+      ]
+    }
+  },
+  {
+    "id": "drake-album",
+    "ticker": "DRAKE",
+    "name": "Drake Album Drop",
+    "question": "Will Drake a.k.a. Drizzy drop a surprise album before the end of November?",
+    "categories": [
+      "celebrities"
+    ],
+    "iconType": "celebrity-music",
+    "badges": [
+      "NEW"
+    ],
+    "yesPercentage": 34,
+    "noPercentage": 66,
+    "yesPrice": "34¢",
+    "noPrice": "66¢",
+    "volume": "$0",
+    "price": "-",
+    "change24h": "-",
+    "trending": false,
+    "extendedInfo": {
+      "type": "celebrity",
+      "description": "Drake has history of surprise album drops. Recent studio activity and cryptic social media posts have fans speculating.",
+      "background": "Drake previously surprise-dropped projects like 'If You're Reading This' and 'Dark Lane Demo Tapes' with minimal warning.",
+      "context": "Producer tags appearing on Instagram stories, studio sessions with known collaborators, suspicious trademark filings.",
+      "historicalPattern": "Drake releases music every 12-18 months. Last project was 8 months ago, making timing plausible but not certain."
+    },
+    "followers": "38.2M",
+    "relevance": "High",
+    "trendingScore": "7.3/10"
+  },
+  {
+    "id": "crackrock-strategy-alpha",
+    "ticker": "CRACKROCK",
+    "name": "CrackRock Accumulation",
+    "question": "Will CrackRock accumulation strategies increase your lifeforce?",
+    "categories": [
+      "crackrock-accumulation"
+    ],
+    "iconType": "strategy-accumulation",
+    "badges": [
+      "STRATEGY"
+    ],
+    "yesPercentage": 90,
+    "noPercentage": 10,
+    "yesPrice": "90¢",
+    "noPrice": "10¢",
+    "volume": "$4.2M",
+    "price": "-",
+    "change24h": "-",
+    "trending": false,
+    "extendedInfo": {
+      "type": "strategy",
+      "description": "CrackRock accumulation strategies using DeFi protocols for maximum acquisition efficiency.",
+      "strategyDetails": "3x leverage on stablecoin yields, converting profits to CrackRock on dips, rebalancing quarterly",
+      "riskAssessment": "High risk due to leverage, liquidation risk at -33% drawdown, but potential for 40%+ outperformance",
+      "backtestResults": "12-month backtest shows 127% total return vs 78% buy-and-hold, max drawdown -28%",
+      "requirements": "Advanced DeFi knowledge, active management, stable collateral"
+    }
+  },
+  {
+    "id": "pred-1760621878965",
+    "ticker": "$SUI",
+    "name": "Sui",
+    "question": "Will Sui continue following the market?",
+    "categories": [
+      "crypto-markets"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "sui",
+    "badges": [
+      "NEW"
+    ],
+    "yesPercentage": 64,
+    "noPercentage": 36,
+    "yesPrice": "64¢",
+    "noPrice": "36¢",
+    "volume": "$892.3M",
+    "price": "$3.42",
+    "change24h": "+4.17%",
+    "trending": false,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Sui is an innovative layer-1 blockchain platform crafted to meet the demands of global adoption, providing a secure, robust, and scalable development environment. Built using the Move programming language, Sui offers parallel transaction execution and horizontal scaling capabilities.",
+      "liquidity": "$156.8M",
+      "holders": "234,891",
+      "marketCap": "$10.2B",
+      "technicalAnalysis": "Strong upward momentum with consistent higher lows. Breaking out of accumulation zone with increasing volume. Network activity and TVL reaching new highs indicating organic growth.",
+      "catalysts": [
+        "Move language adoption increasing",
+        "Gaming ecosystem expansion with major titles launching",
+        "DeFi TVL growing rapidly",
+        "Institutional partnerships with major Web2 companies",
+        "Grayscale Sui Trust launched",
+        "zkLogin and sponsored transactions driving UX improvements"
+      ]
+    }
+  },
+  {
+    "id": "pred-1760626314936",
+    "ticker": "Nick Cannon",
+    "name": "Children of the Cannon",
+    "question": "Will Nick Cannon have another kid before 2026?",
+    "categories": [
+      "celebrities"
+    ],
+    "iconType": "celebrity-general",
+    "coingeckoId": "",
+    "badges": [],
+    "yesPercentage": 50,
+    "noPercentage": 50,
+    "yesPrice": "50¢",
+    "noPrice": "50¢",
+    "volume": "$0",
+    "price": "$0",
+    "change24h": "0%",
+    "trending": true,
+    "extendedInfo": {
+      "type": "celebrity",
+      "description": "Nick Cannon has 12 children and is most likely due for more. Only a matter of time.",
+      "catalysts": [
+        "New girlfriend points to signs this might be a yes. "
+      ],
+      "historicalPattern": "Deploying kids at the speed of sound Nick has a history of bouncing from baby mama to baby mama. It's always just a matter of time before he has another.",
+      "context": "No comment has been made by Nick yet. ",
+      "background": "Nick Cannon has had multiple breakout roles. A multi-talented celebrity there isn't much he cannot do.\nBoomers will remember a little movie called Drumline, where Nick Cannon banged drums as fast as he bangs his harem of single mothers. Most notable would be his show Wild N Out, which has ran for 20 years now and has won him the adoration of many musicians and lyricists we listen to today."
+    },
+    "followers": "4.3M",
+    "relevance": "Ultra",
+    "trendingScore": "8.5/10"
+  },
+  {
+    "id": "pred-1760681250938",
+    "ticker": "Frank",
+    "name": "Frank Shitfluencing",
+    "question": "Will Frank engagement farm by giving polarizing advice on the X timeline before this weekend is done?",
+    "categories": [
+      "kol-chaos",
+      "trending"
+    ],
+    "iconType": "kol-influencer",
+    "coingeckoId": "",
+    "badges": [],
+    "yesPercentage": 50,
+    "noPercentage": 50,
+    "yesPrice": "50¢",
+    "noPrice": "50¢",
+    "volume": "",
+    "price": "",
+    "change24h": "",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "Lowest Possible",
+    "engagement": "0.2% ",
+    "credibility": "1/10",
+    "polls": "",
+    "momentum": "",
+    "likelihood": "",
+    "winRate": "",
+    "riskLevel": "",
+    "timeframe": "",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": true,
+    "extendedInfo": {
+      "type": "kol",
+      "description": "Frank posts polarizing rage bait consistently with the angst and fury of a middle-aged man who's accomplished little with an unfulfilling life. Money means little when the hate of the world weighs down on you.",
+      "liquidity": "",
+      "holders": "",
+      "marketCap": "",
+      "technicalAnalysis": "",
+      "catalysts": [],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "Test analysis polls showed a strong correlation between posts and a specific 24-48 hour timeframe. This suggests the inability to go a day or two without self deprecating behavior.",
+      "behaviorPattern": "This sick fuck gets off on saying the wrong things. Master rage baiter extraordinaire. It's almost embarrassing if it wasn't so tactical. He loves to be hated.",
+      "riskFactors": "Fake person. You can't trust that anything Frank says is true or just meant to stir the pot.\nIt seems like he doesn't actually have any original ideas and has given up, we can expect the worst sell out behavior available for an NPC like him.",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  },
+  {
+    "id": "pred-1760682354637",
+    "ticker": "$HYPE",
+    "name": "Hyperliquid",
+    "question": "Will the Hyperliquid ETF find approval before 2026?",
+    "categories": [
+      "crypto-markets",
+      "trending"
+    ],
+    "iconType": "crypto-defi",
+    "coingeckoId": "hyperliquid",
+    "badges": [
+      "HOT",
+      "NEW"
+    ],
+    "yesPercentage": 33,
+    "noPercentage": 67,
+    "yesPrice": "33¢",
+    "noPrice": "67¢",
+    "volume": "$674M",
+    "price": "$36.52",
+    "change24h": "+8.42%",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "",
+    "engagement": "",
+    "credibility": "",
+    "polls": "",
+    "momentum": "",
+    "likelihood": "",
+    "winRate": "",
+    "riskLevel": "",
+    "timeframe": "",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": true,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Hyperliquid is a performant L1 blockchain optimized from the ground up. The vision is a fully on-chain open financial system with user-built applications interfacing with performant native components, all without compromising end-user experience. It features a high-performance perpetuals DEX with deep liquidity and institutional-grade execution.",
+      "liquidity": "$892.4M",
+      "holders": "156,789",
+      "marketCap": "$9.8B",
+      "technicalAnalysis": "Strong breakout above resistance with sustained volume. Price discovering new ranges after successful token launch. Network growth metrics showing exponential adoption with daily active users increasing 40% week-over-week. Order book depth rivals centralized exchanges.",
+      "catalysts": [
+        "Native token launch driving ecosystem growth",
+        "Spot trading rollout expanding beyond perps",
+        "Growing institutional adoption for on-chain derivatives",
+        "Zero gas fees for makers attracting market makers",
+        "HyperEVM bringing EVM compatibility",
+        "Validator set expansion improving decentralization",
+        "Integration with major wallets and aggregators"
+      ],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "",
+      "behaviorPattern": "",
+      "riskFactors": "",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  },
+  {
+    "id": "pred-1760691937421",
+    "ticker": "$MET",
+    "name": "Meteora",
+    "question": "Will $MET 3x after the public TGE?",
+    "categories": [
+      "trending",
+      "crypto-markets",
+      "token-launches"
+    ],
+    "iconType": "crypto",
+    "coingeckoId": "meteora",
+    "badges": [],
+    "yesPercentage": 19,
+    "noPercentage": 81,
+    "yesPrice": "19¢",
+    "noPrice": "81¢",
+    "volume": "$0",
+    "price": "$0.00",
+    "change24h": "0%",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "",
+    "engagement": "",
+    "credibility": "",
+    "polls": "",
+    "momentum": "",
+    "likelihood": "",
+    "winRate": "",
+    "riskLevel": "",
+    "timeframe": "",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": true,
+    "extendedInfo": {
+      "type": "crypto",
+      "description": "Building world-class dynamic liquidity pools for the biggest global LP community. Token tge and airdrop is October 23rd.",
+      "liquidity": "$0",
+      "holders": "NA",
+      "marketCap": "$0",
+      "technicalAnalysis": "",
+      "catalysts": [
+        "Airdrop on October 23rd"
+      ],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "",
+      "behaviorPattern": "",
+      "riskFactors": "",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  },
+  {
+    "id": "pred-1760692535810",
+    "ticker": "Kook",
+    "name": "KookCapitalLLC",
+    "question": "Will Kook receive positive results from psychological testing?",
+    "categories": [
+      "kol-chaos",
+      "trending"
+    ],
+    "iconType": "kol-influencer",
+    "coingeckoId": "",
+    "badges": [],
+    "yesPercentage": 1,
+    "noPercentage": 99,
+    "yesPrice": "1¢",
+    "noPrice": "99¢",
+    "volume": "",
+    "price": "",
+    "change24h": "",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "Minimal",
+    "engagement": "8%",
+    "credibility": "2/10",
+    "polls": "",
+    "momentum": "",
+    "likelihood": "",
+    "winRate": "",
+    "riskLevel": "",
+    "timeframe": "",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": true,
+    "extendedInfo": {
+      "type": "kol",
+      "description": "Kook is a well know KOL with negative takes and rage bait tactics winning him the hatred of a lot of manlets.",
+      "liquidity": "",
+      "holders": "",
+      "marketCap": "",
+      "technicalAnalysis": "",
+      "catalysts": [],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "FUDs for pay. Has no allegiances. Gross human behavior. Couldn't trust him around a warm pot roast cause he'd try and fuck it.",
+      "behaviorPattern": "Consistent. Caters to the weakest minded percentage of the population. If it's manipulation or just birds of a feather we do not know fully.",
+      "riskFactors": "He may be faking his mental disabilities. Which means his psych evaluation could come back with positive results despite all signs pointing to retardation.",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  },
+  {
+    "id": "pred-1760692974326",
+    "ticker": "Pentagon Reporter Ban",
+    "name": "Pentagon bans reporters from the premises ",
+    "question": "Will the press be given access to the Pentagon again after the Government shutdown?",
+    "categories": [
+      "trending",
+      "politics"
+    ],
+    "iconType": "politics-policy",
+    "coingeckoId": "",
+    "badges": [],
+    "yesPercentage": 43,
+    "noPercentage": 57,
+    "yesPrice": "43¢",
+    "noPrice": "57¢",
+    "volume": "",
+    "price": "",
+    "change24h": "",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "",
+    "engagement": "",
+    "credibility": "",
+    "polls": "43%",
+    "momentum": "Calming",
+    "likelihood": "35%",
+    "winRate": "",
+    "riskLevel": "",
+    "timeframe": "",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": false,
+    "extendedInfo": {
+      "type": "politics",
+      "description": "Reporters banned from the Pentagon.",
+      "liquidity": "",
+      "holders": "",
+      "marketCap": "",
+      "technicalAnalysis": "",
+      "catalysts": [],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "",
+      "behaviorPattern": "",
+      "riskFactors": "",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  },
+  {
+    "id": "pred-1760693445728",
+    "ticker": "Furniture or CrackRock?",
+    "name": "Question of the Day",
+    "question": "Do I really need my furniture more than I need more CrackRock?",
+    "categories": [
+      "crackrock-accumulation"
+    ],
+    "iconType": "strategy-arbitrage",
+    "coingeckoId": "",
+    "badges": [],
+    "yesPercentage": 73,
+    "noPercentage": 27,
+    "yesPrice": "73¢",
+    "noPrice": "27¢",
+    "volume": "",
+    "price": "",
+    "change24h": "",
+    "followers": "",
+    "relevance": "",
+    "trendingScore": "",
+    "influence": "",
+    "engagement": "",
+    "credibility": "",
+    "polls": "",
+    "momentum": "",
+    "likelihood": "",
+    "winRate": "",
+    "riskLevel": "Super Low",
+    "timeframe": "Instant",
+    "rugRisk": "",
+    "hypeLevel": "",
+    "moonPotential": "",
+    "trending": false,
+    "extendedInfo": {
+      "type": "strategy",
+      "description": "Should I sell all my furniture?",
+      "liquidity": "",
+      "holders": "",
+      "marketCap": "",
+      "technicalAnalysis": "",
+      "catalysts": [],
+      "background": "",
+      "context": "",
+      "historicalPattern": "",
+      "trackRecord": "",
+      "behaviorPattern": "",
+      "riskFactors": "",
+      "strategyDetails": "",
+      "riskAssessment": "",
+      "backtestResults": "",
+      "requirements": "",
+      "historicalData": "",
+      "warnings": "",
+      "stakes": "",
+      "historicalContext": ""
+    }
+  }
+]
