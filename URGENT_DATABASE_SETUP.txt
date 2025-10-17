@@ -1,0 +1,122 @@
+========================================
+🚨 URGENT: DATABASE SETUP REQUIRED
+========================================
+
+Your code has been deployed, but the admin panel
+won't work until you set up the Postgres database!
+
+This takes 5 minutes and is FREE.
+
+========================================
+QUICK SETUP STEPS
+========================================
+
+STEP 1: Create Database (2 minutes)
+------------------------------------
+1. Go to: https://vercel.com/dashboard
+2. Select your CrackRock project
+3. Click "Storage" tab (top navigation)
+4. Click "Create Database"
+5. Select "Postgres"
+6. Settings:
+   - Name: crackrock-predictions
+   - Region: us-east-1 (or closest to you)
+   - Plan: Hobby (FREE)
+7. Click "Create"
+
+
+STEP 2: Connect to Project (1 minute)
+--------------------------------------
+1. After creating, click "Connect Project"
+2. Select your "crackrock-v0" project
+3. Vercel auto-adds these env vars:
+   ✓ POSTGRES_URL
+   ✓ POSTGRES_PRISMA_URL
+   ✓ POSTGRES_URL_NON_POOLING
+   ✓ POSTGRES_USER
+   ✓ POSTGRES_HOST
+   ✓ POSTGRES_PASSWORD
+   ✓ POSTGRES_DATABASE
+
+
+STEP 3: Redeploy (1 minute)
+----------------------------
+1. Go to "Deployments" tab
+2. Click [...] on latest deployment
+3. Click "Redeploy"
+4. Wait 2-3 minutes
+
+
+STEP 4: Test Admin Panel (1 minute)
+------------------------------------
+1. Go to: your-domain.vercel.app/dashboard/admin
+2. Login with your admin password
+3. Try creating a new prediction
+4. ✅ Should work now!
+
+
+========================================
+WHY THIS IS NEEDED
+========================================
+
+Problem: Vercel's file system is READ-ONLY
+Your app was trying to write to JSON files
+This doesn't work on Vercel's serverless functions
+
+Solution: We migrated to Postgres database
+Now your data persists in a real database
+Works perfectly on Vercel's FREE tier!
+
+
+========================================
+WHAT HAPPENS AFTER SETUP
+========================================
+
+✓ Database tables created automatically
+✓ Your existing predictions loaded into DB
+✓ Admin panel works perfectly
+✓ All future saves persist forever
+✓ Safe for concurrent edits
+✓ FREE (256MB storage, 60 hours compute/month)
+
+
+========================================
+DETAILED GUIDE
+========================================
+
+See: VERCEL_DATABASE_SETUP.md
+(Complete step-by-step instructions)
+
+
+========================================
+STATUS
+========================================
+
+✅ Code deployed: commit 512f94f
+✅ Database package installed
+✅ API routes updated
+⏳ Waiting for: Database creation on Vercel
+🔐 Don't forget: You still need to set ADMIN_PASSWORD
+                 and SESSION_SECRET env vars!
+
+
+========================================
+FULL CHECKLIST
+========================================
+
+□ Create Postgres database in Vercel Storage
+□ Connect database to your project
+□ Set ADMIN_PASSWORD env var
+□ Set SESSION_SECRET env var
+□ Redeploy from Vercel dashboard
+□ Test admin panel
+□ Celebrate! 🎉
+
+
+========================================
+
+GO HERE NOW: https://vercel.com/dashboard
+Click Storage → Create Database → Postgres
+
+========================================
+

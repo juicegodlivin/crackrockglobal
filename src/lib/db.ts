@@ -3,12 +3,39 @@ import type { Prediction, Stats } from '@/types/dashboard';
 import predictionsData from '@/data/predictions.json';
 import statsData from '@/data/stats.json';
 
+// Check if database is available
+let databaseAvailable: boolean | null = null;
+
+async function isDatabaseAvailable(): Promise<boolean> {
+  if (databaseAvailable !== null) return databaseAvailable;
+  
+  try {
+    // Quick check if database connection exists
+    if (!process.env.POSTGRES_URL) {
+      databaseAvailable = false;
+      return false;
+    }
+    await sql`SELECT 1`;
+    databaseAvailable = true;
+    return true;
+  } catch (error) {
+    console.log('Database not available, using JSON fallback');
+    databaseAvailable = false;
+    return false;
+  }
+}
+
 /**
  * Initialize database tables if they don't exist
  * This will be called on first API request
  */
 export async function initializeDatabase() {
   try {
+    if (!(await isDatabaseAvailable())) {
+      console.log('Database not configured, skipping initialization');
+      return false;
+    }
+
     // Create predictions table
     await sql`
       CREATE TABLE IF NOT EXISTS predictions (
@@ -62,10 +89,15 @@ export async function initializeDatabase() {
 }
 
 /**
- * Get all predictions from database
+ * Get all predictions from database or JSON fallback
  */
 export async function getAllPredictions(): Promise<Prediction[]> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      console.log('Using JSON fallback for predictions');
+      return predictionsData as Prediction[];
+    }
+
     await initializeDatabase();
     
     const result = await sql`
@@ -74,8 +106,8 @@ export async function getAllPredictions(): Promise<Prediction[]> {
     
     return result.rows.map(row => row.data as Prediction);
   } catch (error) {
-    console.error('Error fetching predictions:', error);
-    throw error;
+    console.error('Error fetching predictions, falling back to JSON:', error);
+    return predictionsData as Prediction[];
   }
 }
 
@@ -84,6 +116,11 @@ export async function getAllPredictions(): Promise<Prediction[]> {
  */
 export async function getPredictionById(id: string): Promise<Prediction | null> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      const predictions = predictionsData as Prediction[];
+      return predictions.find(p => p.id === id) || null;
+    }
+
     const result = await sql`
       SELECT data FROM predictions WHERE id = ${id}
     `;
@@ -92,7 +129,8 @@ export async function getPredictionById(id: string): Promise<Prediction | null> 
     return result.rows[0].data as Prediction;
   } catch (error) {
     console.error('Error fetching prediction:', error);
-    throw error;
+    const predictions = predictionsData as Prediction[];
+    return predictions.find(p => p.id === id) || null;
   }
 }
 
@@ -101,6 +139,10 @@ export async function getPredictionById(id: string): Promise<Prediction | null> 
  */
 export async function createPrediction(prediction: Prediction): Promise<Prediction> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      throw new Error('Database not available. Please set up Vercel Postgres database first. See VERCEL_DATABASE_SETUP.md');
+    }
+
     await sql`
       INSERT INTO predictions (id, data)
       VALUES (${prediction.id}, ${JSON.stringify(prediction)}::jsonb)
@@ -118,6 +160,10 @@ export async function createPrediction(prediction: Prediction): Promise<Predicti
  */
 export async function updatePrediction(prediction: Prediction): Promise<Prediction> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      throw new Error('Database not available. Please set up Vercel Postgres database first. See VERCEL_DATABASE_SETUP.md');
+    }
+
     await sql`
       UPDATE predictions
       SET data = ${JSON.stringify(prediction)}::jsonb,
@@ -137,6 +183,10 @@ export async function updatePrediction(prediction: Prediction): Promise<Predicti
  */
 export async function deletePrediction(id: string): Promise<boolean> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      throw new Error('Database not available. Please set up Vercel Postgres database first. See VERCEL_DATABASE_SETUP.md');
+    }
+
     await sql`
       DELETE FROM predictions WHERE id = ${id}
     `;
@@ -149,10 +199,15 @@ export async function deletePrediction(id: string): Promise<boolean> {
 }
 
 /**
- * Get stats from database
+ * Get stats from database or JSON fallback
  */
 export async function getStats(): Promise<Stats> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      console.log('Using JSON fallback for stats');
+      return statsData as Stats;
+    }
+
     await initializeDatabase();
     
     const result = await sql`
@@ -166,8 +221,8 @@ export async function getStats(): Promise<Stats> {
     
     return result.rows[0].data as Stats;
   } catch (error) {
-    console.error('Error fetching stats:', error);
-    throw error;
+    console.error('Error fetching stats, falling back to JSON:', error);
+    return statsData as Stats;
   }
 }
 
@@ -176,6 +231,10 @@ export async function getStats(): Promise<Stats> {
  */
 export async function updateStats(stats: Stats): Promise<Stats> {
   try {
+    if (!(await isDatabaseAvailable())) {
+      throw new Error('Database not available. Please set up Vercel Postgres database first. See VERCEL_DATABASE_SETUP.md');
+    }
+
     await sql`
       INSERT INTO stats (id, data)
       VALUES ('default', ${JSON.stringify(stats)}::jsonb)
