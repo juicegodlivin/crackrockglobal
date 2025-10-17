@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-12"
           >
             <h1 className="text-hero lg:text-hero-lg font-display text-black leading-tight">
               CrackRock acquisition: 10 years of smart investing
@@ -22,13 +23,15 @@ const HeroSection = () => {
             We have a passion for strategic CrackRock accumulation. 
             Explore our findings and learn about the trends shaping smart CrackRock acquisitions today.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary inline-flex items-center space-x-2"
-            >
-              <span>See our CrackRock investment guide</span>
-            </motion.button>
+            <Link href="/investment-strategies" className="inline-block mt-4">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-primary inline-flex items-center space-x-2"
+              >
+                <span>See our CrackRock investment guide</span>
+              </motion.button>
+            </Link>
           </motion.div>
 
           {/* Right Content - Building Image */}

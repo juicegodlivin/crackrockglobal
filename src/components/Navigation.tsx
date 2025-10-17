@@ -9,7 +9,6 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { label: 'Funds', href: '/funds' },
     { label: 'Investment strategies', href: '/investment-strategies' },
     { label: 'CrackRock insights', href: '/crackrock-insights' },
     { label: 'About us', href: '/about-us' },

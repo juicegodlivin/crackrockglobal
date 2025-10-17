@@ -26,7 +26,8 @@ import {
   Target,
   Brain,
   Zap,
-  AlertTriangle
+  AlertTriangle,
+  Share2
 } from 'lucide-react'
 
 interface Strategy {
@@ -312,6 +313,22 @@ export default function InvestmentStrategiesPage() {
     ultimate: strategies.filter(s => s.category === 'ultimate')
   }
 
+  // Function to create Twitter share URL
+  const createTwitterShareUrl = (strategy: Strategy) => {
+    const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://crackrockinternational.com/investment-strategies'
+    const text = `Check out Strategy #${strategy.number}: ${strategy.title} - ${strategy.subtitle}`
+    const hashtags = 'CrackRockInternational,InvestmentStrategy,CryptoStrategy'
+    
+    return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(pageUrl)}&hashtags=${hashtags}`
+  }
+
+  // Handle share button click
+  const handleShare = (strategy: Strategy, e: React.MouseEvent) => {
+    e.stopPropagation() // Prevent card click event if any
+    const shareUrl = createTwitterShareUrl(strategy)
+    window.open(shareUrl, '_blank', 'width=550,height=420')
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
       <Navigation />
@@ -423,6 +440,17 @@ export default function InvestmentStrategiesPage() {
                       <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-bold text-lg shadow-lg">
                         {strategy.number}
                       </div>
+
+                      {/* Share Button */}
+                      <motion.button
+                        onClick={(e) => handleShare(strategy, e)}
+                        className="absolute top-4 right-[4.5rem] w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-20"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        aria-label={`Share ${strategy.title} on X`}
+                      >
+                        <Share2 className="w-5 h-5" />
+                      </motion.button>
 
                       {/* Gradient overlay for ultimate strategy */}
                       {isUltimate && (
