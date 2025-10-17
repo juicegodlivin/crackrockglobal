@@ -1,26 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import type { Prediction } from '@/types/dashboard';
 import { requireAuth } from '@/lib/auth';
-
-const PREDICTIONS_FILE = path.join(process.cwd(), 'src', 'data', 'predictions.json');
-
-// Helper to read predictions
-function readPredictions(): Prediction[] {
-  const fileContents = fs.readFileSync(PREDICTIONS_FILE, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-// Helper to write predictions
-function writePredictions(predictions: Prediction[]) {
-  fs.writeFileSync(PREDICTIONS_FILE, JSON.stringify(predictions, null, 2), 'utf8');
-}
+import {
+  getAllPredictions,
+  createPrediction,
+  updatePrediction,
+  deletePrediction,
+} from '@/lib/db';
 
 // GET - Fetch all predictions
 export async function GET() {
   try {
-    const predictions = readPredictions();
+    const predictions = await getAllPredictions();
     return NextResponse.json(predictions);
   } catch (error) {
     console.error('Error reading predictions:', error);
@@ -39,18 +30,16 @@ export async function POST(request: NextRequest) {
 
   try {
     const newPrediction: Prediction = await request.json();
-    const predictions = readPredictions();
     
     // Ensure the prediction has an ID
     if (!newPrediction.id) {
       newPrediction.id = `pred-${Date.now()}`;
     }
     
-    // Add the new prediction
-    predictions.push(newPrediction);
-    writePredictions(predictions);
+    // Save to database
+    const created = await createPrediction(newPrediction);
     
-    return NextResponse.json(newPrediction, { status: 201 });
+    return NextResponse.json(created, { status: 201 });
   } catch (error) {
     console.error('Error creating prediction:', error);
     return NextResponse.json(
@@ -68,20 +57,11 @@ export async function PUT(request: NextRequest) {
 
   try {
     const updatedPrediction: Prediction = await request.json();
-    const predictions = readPredictions();
     
-    const index = predictions.findIndex(p => p.id === updatedPrediction.id);
-    if (index === -1) {
-      return NextResponse.json(
-        { error: 'Prediction not found' },
-        { status: 404 }
-      );
-    }
+    // Update in database
+    const updated = await updatePrediction(updatedPrediction);
     
-    predictions[index] = updatedPrediction;
-    writePredictions(predictions);
-    
-    return NextResponse.json(updatedPrediction);
+    return NextResponse.json(updated);
   } catch (error) {
     console.error('Error updating prediction:', error);
     return NextResponse.json(
@@ -108,17 +88,8 @@ export async function DELETE(request: NextRequest) {
       );
     }
     
-    const predictions = readPredictions();
-    const filteredPredictions = predictions.filter(p => p.id !== id);
-    
-    if (filteredPredictions.length === predictions.length) {
-      return NextResponse.json(
-        { error: 'Prediction not found' },
-        { status: 404 }
-      );
-    }
-    
-    writePredictions(filteredPredictions);
+    // Delete from database
+    await deletePrediction(id);
     
     return NextResponse.json({ success: true, id });
   } catch (error) {

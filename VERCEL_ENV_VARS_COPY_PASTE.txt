@@ -1,0 +1,59 @@
+========================================
+VERCEL ENVIRONMENT VARIABLES
+COPY-PASTE READY
+========================================
+
+Go to: Vercel Dashboard → Your Project → Settings → Environment Variables
+
+Then add these 3 variables:
+
+
+VARIABLE 1
+----------
+Name: ADMIN_PASSWORD
+Value: YourSecurePassword123!
+Environments: ✓ Production  ✓ Preview  ✓ Development
+
+
+VARIABLE 2
+----------
+Name: SESSION_SECRET
+Value: d4c2fe373c0fe84ff05b7ed0ff89cdaed5b441d5d7775d2ce1c80e5ee4ec7c34
+Environments: ✓ Production  ✓ Preview  ✓ Development
+
+
+VARIABLE 3
+----------
+Name: NODE_ENV
+Value: production
+Environments: ✓ Production
+
+
+========================================
+IMPORTANT: After adding variables
+========================================
+1. Go to Deployments tab
+2. Click [...] on latest deployment
+3. Click "Redeploy"
+4. Wait 2-3 minutes
+
+
+========================================
+TEST YOUR SITE
+========================================
+Public Dashboard: /dashboard
+Admin Panel: /dashboard/admin
+Login with the password you set in ADMIN_PASSWORD
+
+
+========================================
+STATUS
+========================================
+✅ Code pushed to GitHub: fc5dcbc
+✅ Vercel is deploying now
+⏳ Waiting for environment variables
+🔐 Admin panel will work after variables are set
+
+
+========================================
+

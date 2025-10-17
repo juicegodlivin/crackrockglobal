@@ -1,26 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import type { Stats } from '@/types/dashboard';
 import { requireAuth } from '@/lib/auth';
-
-const STATS_FILE = path.join(process.cwd(), 'src', 'data', 'stats.json');
-
-// Helper to read stats
-function readStats(): Stats {
-  const fileContents = fs.readFileSync(STATS_FILE, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-// Helper to write stats
-function writeStats(stats: Stats) {
-  fs.writeFileSync(STATS_FILE, JSON.stringify(stats, null, 2), 'utf8');
-}
+import { getStats, updateStats } from '@/lib/db';
 
 // GET - Fetch stats
 export async function GET() {
   try {
-    const stats = readStats();
+    const stats = await getStats();
     return NextResponse.json(stats);
   } catch (error) {
     console.error('Error reading stats:', error);
@@ -39,9 +25,9 @@ export async function PUT(request: NextRequest) {
 
   try {
     const updatedStats: Stats = await request.json();
-    writeStats(updatedStats);
+    const stats = await updateStats(updatedStats);
     
-    return NextResponse.json(updatedStats);
+    return NextResponse.json(stats);
   } catch (error) {
     console.error('Error updating stats:', error);
     return NextResponse.json(
