@@ -2,11 +2,13 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 import { TrendingUp, AlertTriangle, DollarSign, Home, Wrench } from 'lucide-react'
 
 export default function Fall2025MarketAnalysis() {
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-yellow-50 to-white pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

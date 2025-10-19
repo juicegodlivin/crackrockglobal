@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { 
   Smartphone, 
   DollarSign, 
@@ -93,9 +94,9 @@ const InvestmentGrid = () => {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-20">
+    <section className="bg-gray-50 py-12 md:py-16 lg:py-20">
       <div className="max-w-site-wide mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {investments.map((investment, index) => {
             const IconComponent = investment.icon
             const isLarge = investment.size === 'large'
@@ -120,9 +121,9 @@ const InvestmentGrid = () => {
                 className={`
                   ${investment.cardStyle} 
                   ${investment.textColor}
-                  ${isLarge ? 'md:col-span-2 lg:col-span-2' : ''} 
+                  ${isLarge ? 'md:col-span-2' : ''} 
                   ${investment.glowColor}
-                  rounded-xl p-6 lg:p-8 group cursor-pointer relative overflow-hidden
+                  rounded-xl p-5 md:p-6 lg:p-8 group cursor-pointer relative overflow-hidden
                 `}
                 style={{ transformStyle: 'preserve-3d' }}
               >
@@ -197,25 +198,27 @@ const InvestmentGrid = () => {
                     {investment.content}
                   </motion.p>
                   
-                  <motion.button
-                    whileHover={{ 
-                      scale: 1.05, 
-                      boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-                      y: -2
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                    className={`
-                      ${investment.cardStyle.includes('card-gradient-gold') ? 'btn-secondary' : 'btn-primary'}
-                      text-sm relative overflow-hidden group/btn
-                    `}
-                  >
-                    <span className="relative z-10">{investment.buttonText}</span>
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"
-                      whileHover={{ scale: 1.1 }}
-                    />
-                  </motion.button>
+                  <Link href="/crackrock-insights">
+                    <motion.button
+                      whileHover={{ 
+                        scale: 1.05, 
+                        boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+                        y: -2
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                      className={`
+                        ${investment.cardStyle.includes('card-gradient-gold') ? 'btn-secondary' : 'btn-primary'}
+                        text-sm relative overflow-hidden group/btn
+                      `}
+                    >
+                      <span className="relative z-10">Report Coming Soon</span>
+                      <motion.div
+                        className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"
+                        whileHover={{ scale: 1.1 }}
+                      />
+                    </motion.button>
+                  </Link>
                 </div>
               </motion.div>
             )

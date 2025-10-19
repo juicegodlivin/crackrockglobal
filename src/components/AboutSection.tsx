@@ -1,13 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-12 md:py-16 lg:py-20">
       <div className="max-w-site-wide mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-          {/* Left Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center">
+          {/* Left Content - About Us */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,42 +28,40 @@ const AboutSection = () => {
                 For over a decade, we've been helping individuals and institutions maximize their CrackRock acquisition 
                 potential through smart financial planning and strategic investing.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-secondary"
-            >
-              Learn more about CrackRock investing
-            </motion.button>
+            <Link href="/about-us">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-secondary"
+              >
+                Learn more about the CrackRock Global team
+              </motion.button>
+            </Link>
           </motion.div>
 
-          {/* Right Content - Stats */}
+          {/* Right Content - Maximize Your Potential */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-gray-50 rounded-lg p-8"
+            className="bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl p-8 lg:p-10"
           >
-            <div className="mb-6">
-              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
-                OUR CRACKROCK SERVICES
-              </span>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-2">CrackRock Portfolio Access</h3>
-                <p className="text-gray-600">Secure platform for managing your CrackRock investments</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-2">Custom CrackRock strategies</h3>
-                <p className="text-gray-600">Tailored investment plans for maximum CrackRock acquisition</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-2">CrackRock market analysis</h3>
-                <p className="text-gray-600">Real-time insights and trends in CrackRock markets</p>
-              </div>
-            </div>
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
+              Maximize your CrackRock potential
+            </h3>
+            <p className="text-gray-300 mb-8 leading-relaxed">
+              Stay informed with the latest CrackRock investment insights, market analysis, and acquisition strategies from our expert team.
+            </p>
+            <Link href="/investment-strategies">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-primary text-black px-8 py-3 rounded font-semibold hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto"
+              >
+                Explore CrackRock strategies
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -411,4 +411,24 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
+
+  /* Highlight Flash Animation for Search Navigation */
+  @keyframes highlightFlash {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 30px 15px rgba(255, 215, 0, 0.4);
+      transform: scale(1.02);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+      transform: scale(1);
+    }
+  }
+
+  .highlight-flash {
+    animation: highlightFlash 2s ease-in-out;
+  }
 }

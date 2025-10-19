@@ -8,13 +8,13 @@ const HeroSection = () => {
   return (
     <section className="bg-white py-12 lg:py-20">
       <div className="max-w-site-wide mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-12"
+            className="space-y-6 lg:space-y-12"
           >
             <h1 className="text-hero lg:text-hero-lg font-display text-black leading-tight">
               CrackRock acquisition: 10 years of smart investing
@@ -41,7 +41,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-lg mx-auto -mt-20 mb-[-8rem]">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-lg mx-auto lg:-mt-20 lg:mb-[-8rem]">
               <Image
                 src="/CrackRock Building.png"
                 alt="CrackRock Building"

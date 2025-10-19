@@ -39,11 +39,11 @@ const CardsSection = () => {
   ]
 
   return (
-    <section className="bg-primary py-32 lg:py-40 relative">
-      {/* Cards positioned to overlap the section boundary */}
-      <div className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-10">
+    <section className="bg-primary py-16 lg:py-32 xl:py-40 relative">
+      {/* Cards positioned to overlap the section boundary on desktop only */}
+      <div className="relative lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:transform lg:translate-y-1/2 z-10">
         <div className="max-w-site-wide mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {cards.map((card, index) => {
             const IconComponent = card.icon
             return (
@@ -63,7 +63,7 @@ const CardsSection = () => {
                     rotateY: 5,
                     rotateX: 5
                   }}
-                  className={`${card.cardStyle} rounded-xl p-6 lg:p-8 group cursor-pointer relative overflow-hidden`}
+                  className={`${card.cardStyle} rounded-xl p-5 md:p-6 lg:p-8 group cursor-pointer relative overflow-hidden`}
                   style={{ transformStyle: 'preserve-3d' }}
                 >
                 {/* Subtle background glow */}
