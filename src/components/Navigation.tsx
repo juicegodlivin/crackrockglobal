@@ -10,7 +10,7 @@ const Navigation = () => {
   const [copied, setCopied] = useState(false)
 
   // Contract Address - update this when available
-  const contractAddress = '' // Empty string means "Soon..."
+  const contractAddress: string = '' // Empty string means "Soon..."
   const isSoon = !contractAddress
 
   const navItems = [
