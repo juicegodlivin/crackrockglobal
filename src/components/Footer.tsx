@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
+import { PUMP_FUN_URL } from '@/config/contract'
 
 const Footer = () => {
   const footerSections = [
@@ -53,7 +54,7 @@ const Footer = () => {
     },
     { 
       label: "Pump.fun Token", 
-      href: "#", // Replace with actual Pump.fun URL
+      href: PUMP_FUN_URL,
       icon: "🪨"
     }
   ]

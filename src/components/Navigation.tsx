@@ -4,14 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, Copy, Check } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { CONTRACT_ADDRESS, IS_SOON } from '@/config/contract'
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [copied, setCopied] = useState(false)
 
-  // Contract Address - update this when available
-  const contractAddress: string = '' // Empty string means "Soon..."
-  const isSoon = !contractAddress
+  const contractAddress = CONTRACT_ADDRESS
+  const isSoon = IS_SOON
 
   const navItems = [
     { label: 'Investment strategies', href: '/investment-strategies' },
