@@ -30,6 +30,18 @@ const reports: Report[] = [
     slug: 'fall-2025-market-analysis',
     featured: true,
     color: 'from-yellow-400 to-orange-500'
+  },
+  {
+    id: '2',
+    title: 'CrackRock vs. Diamonds',
+    subtitle: 'Why Liquidate Your Rocks for Better Rocks',
+    description: 'A comprehensive analysis of why keeping your diamonds when they can be liquidated for CrackRock accumulation makes zero financial sense. Spoiler: CrackRock compounds, diamonds just sparkle uselessly.',
+    publishDate: 'October 20, 2025',
+    readTime: '4 min read',
+    category: 'Investment Strategy',
+    slug: 'crackrock-vs-diamonds',
+    featured: false,
+    color: 'from-blue-400 to-purple-500'
   }
   // Add more reports here as they come
 ]
