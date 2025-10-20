@@ -42,6 +42,18 @@ const reports: Report[] = [
     slug: 'crackrock-vs-diamonds',
     featured: false,
     color: 'from-blue-400 to-purple-500'
+  },
+  {
+    id: '3',
+    title: 'Technical Innovation Through Cultural Mechanics',
+    subtitle: 'How Proof of Rock Solves the Oracle Problem',
+    description: 'Deep dive into our revolutionary Proof of Rock consensus mechanism, where the validity of predictions is determined by aggregate CrackRock stake weight. Making the market itself the oracle through distributed truth verification.',
+    publishDate: 'October 21, 2025',
+    readTime: '5 min read',
+    category: 'Technical Innovation',
+    slug: 'proof-of-rock-consensus',
+    featured: false,
+    color: 'from-purple-400 to-pink-500'
   }
   // Add more reports here as they come
 ]
