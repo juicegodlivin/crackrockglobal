@@ -28,7 +28,7 @@ export default function ProofOfRockConsensus() {
               How Proof of Rock consensus revolutionizes prediction markets and solves the oracle problem
             </p>
             <div className="text-sm text-gray-500">
-              Published: October 21, 2025 • Reading time: 5 min
+              Published: October 20, 2025 • Reading time: 5 min
             </div>
           </motion.div>
         </div>
